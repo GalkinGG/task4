@@ -373,6 +373,26 @@
       border-radius: 4px;
     }
 
+    .energy-bar::-webkit-progress-value {
+      background-color: #4197b3;
+    }
+
+    .intelligence-bar::-webkit-progress-value {
+      background-color: #e2ad3a;
+    }
+
+    .nature-bar::-webkit-progress-value {
+      background-color: #33a373;
+    }
+
+    .tactics-bar::-webkit-progress-value {
+      background-color: #876099;
+    }
+
+    .personality-bar::-webkit-progress-value {
+      background-color: #f05d61;
+    }
+
 
     .new-skills-form {
       box-sizing: border-box;
@@ -573,15 +593,8 @@
     .result-bar-container {
       flex-grow: 1;
       height: 8px;
-      background-color: rgba(152, 163, 174, 0.12);
       border-radius: 4px;
       margin: 0 8px;
-    }
-
-    .result-progress-bar {
-      height: 100%;
-      background-color: goldenrod;
-      border-radius: 4px;
     }
 
     .trait-label:last-child {
@@ -749,7 +762,7 @@
       <div class="trait">
         <div class="trait-label">Экстраверт</div>
         <div class="result-bar-container">
-          <div class="result-progress-bar" style="width: 67%"></div>
+          <progress class="energy-bar" value="67" max="100"></progress>
         </div>
         <div class="trait-label">Интроверт</div>
       </div>
@@ -757,7 +770,7 @@
       <div class="trait">
         <div class="trait-label">Интуитивные</div>
         <div class="result-bar-container">
-          <div class="result-progress-bar" style="width: 59%"></div>
+          <progress class="intelligence-bar" value="41" max="100"></progress>
         </div>
         <div class="trait-label">Реалистичные</div>
       </div>
@@ -765,7 +778,7 @@
       <div class="trait">
         <div class="trait-label">Логика</div>
         <div class="result-bar-container">
-          <div class="result-progress-bar" style="width: 63%"></div>
+          <progress class="nature-bar" value="37" max="100"></progress>
         </div>
         <div class="trait-label">Принципы</div>
       </div>
@@ -773,7 +786,7 @@
       <div class="trait">
         <div class="trait-label">Планирующие</div>
         <div class="result-bar-container">
-          <div class="result-progress-bar" style="width: 60%"></div>
+          <progress class="tactics-bar" value="40" max="100"></progress>
         </div>
         <div class="trait-label">Ищущие</div>
       </div>
@@ -781,7 +794,7 @@
       <div class="trait">
         <div class="trait-label">Уверенные</div>
         <div class="result-bar-container">
-          <div class="result-progress-bar" style="width: 60%"></div>
+          <progress class="personality-bar" value="60" max="100"></progress>
         </div>
         <div class="trait-label">Осторожные</div>
       </div>
